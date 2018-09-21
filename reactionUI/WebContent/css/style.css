@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* layout (전체배경)*/
+body {background-image: url(../img/body_bg.png);
+	  background-color: #f1f4fb;}
+/* 한줄로 작성 가능 */
+/* body {background: url(../img/body_bg.png) #f1f4fb;} */
+#wrap {}
+#header {height: 327px; 
+		background-image: url(../img/header_bg.jpg);
+		background-repeat: repeat-x; x축으로 반복
+		background-position: center top;
+		background: url(../img/header_bg.jpg) repeat-x center top;
+		
+		}
+#contents {}
+#footer {height: 200px; background-color: #777;}
+
+/* container (가운데)*/
+.container {position: relative; width: 990px;/*  background-color: rgba(255,255,255,0.4);  */margin: 0 auto;}
+
+/* content layout (전체배경)*/
+#cont-nav {background: url(../img/con_nav_bg.png); repeat-x; }
+#cont-tit {background-color: #fff; }
+#cont-ban {width: 100%; height: 100px; background-color: #333;}
+#cont-cont {width: 100%; height: 100px; background-color: #222;}
+
+/* quick */
+/* .quick ul {overflow: hidden; } */ /* block구조 속성으로 float와 함께 사용한다. */
+/* .quick ul li {float: left; } */ /* block구조 속성 */
+.quick {text-align: right; } /* inline 구조 속성 block구조에는 반영되지 않는다. */
+.quick a {color: #fff; padding: 5px 0 0 10px; display: inline-block;} /*padding : 위 오른쪽 아래 왼쪽 */
+.quick a:hover {color: red;}
+
+/* title */
+/* .title {text-align: center;}
+.title p {background-color: #2698cb; font-size: 28px; display: inline-block; color:#fff; margin-top: 100px; padding: 5px 15px; text-transform: uppercase;}
+.title h1 a {background-color: #4aa8d4; font-size: 18px; display: inline-block; color: #fff; text-transform: capitalize; padding: 5px 15px;} */
+
+.title {}
+.title h1 {position: absolute; left: 450px; top: 140px;}
+.title p {background-color: #2698cb; font-size: 28px; color:#fff; text-transform: uppercase;position: absolute; left: 280px; top: 100px;}
+.title h1 a {background-color: #4aa8d4; font-size: 18px; display: inline-block; color: #fff; text-transform: capitalize; padding: 5px 15px;}
+
+/* icon */
+.icon {position: absolute; left:395px; top: 220px;}
+.icon ul {overflow: hidden;}
+.icon li {float: left;}
+/* 백그라운드를 통한 이미지 링크방법  */
+/* .icon li a {width: 57px; height: 57px; background-color: #000; display: block; margin: 0 3px; background-image: url(../img/icon.jpg);}
+.icon li a:hover {background-image: url(../img/icon_on.jpg);} */
+
+.icon li a {width: 57px; height: 57px; background-color: #000; display: block; margin: 0 3px; background-image: url(../img/icon.jpg);}
+.icon li a:hover {}
+.icon li.icon-tit1 a { }
+.icon li.icon-tit2 a {background-position: 0 -120px;}
+.icon li.icon-tit3 a {background-position: 0 -240px;}
+.icon li.icon-tit4 a {background-position: 0 -360px;}
+.icon li.icon-tit1 a:hover {background-position: 0 -60px; }
+.icon li.icon-tit2 a:hover {background-position: 0 -180px;}
+.icon li.icon-tit3 a:hover {background-position: 0 -300px;}
+.icon li.icon-tit4 a:hover {background-position: 0 -420px;}
+
+/* nav */
+.nav {overflow: hidden; padding: 20px 0; }
+.nav div {float: left; width: 40%;}
+.nav div.last {width: 20%;}
+.nav div h3 {font-size: 18px; color: #25a2d0; }
+.nav div ul {overflow: hidden; }
+.nav div ul li {width: 50%; float: left; }
+.nav div.last ul li {width: 100%; }
+.nav div ul li a {color: #333;padding: 3px;}
+.nav div ul li a:hover {background-color: #1a96d0; color: #fff; }
+
+/* tit */
+.tit {}
+.tit h2 {text-align: center; font-size: 39px; color:#2c94c4; letter-spacing: 2px; font-family: "Nanum Brush Script"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

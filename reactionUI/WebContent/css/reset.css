@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* 여백 초기화 */
+body, div, dl, dd, dt, ul, li, ol, h1, h2, h3, h4, h5, h6, 
+form, input, legend, textarea, select, fieldset, p, button {margin:0px; padding:0px;}
+
+/* 링크 초기화 */
+a {color: #273743; text-decoration: none; }
+a:hover {color:#DF013A;}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, talbe {font-family: "나눔 고딕", "Nanum Gothic", "돋움", Dotum, sans-serif; font-size: 12px; line-height: 1.7;}
+
+/* 제목 스타일 초기화 */
+h1, h2, h3, h4, h5, h6 {font-size: 12px; font-weight: normal;}
+
+/* 블릿기호 초기화 */
+li, ol, ul {list-style: none;}
+
+/* ir 효과 */
+.ir {width: 0; height: 0; font-size: 0; line-height: 0; overflow: hidden; position: absolute; left: 0; top: 0;}
+

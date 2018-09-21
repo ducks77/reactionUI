@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Outliner</title>
+</head>
+<body>
+	<header>
+		<h1>반응형 사이트 타이틀</h1>
+	</header>
+	<nav>
+		<h2>반응형 사이트 전체메뉴</h2>
+	</nav>
+	<article>
+		<h2>반응형 사이트 서브타이틀</h2>
+	</article>
+	<main>
+		<section>
+			<h2>반응형 사이트 컨텐츠</h2>
+			<section>
+				<h3>반응형 사이트 왼쪽 컨텐츠</h3>
+				<article><h4>반응형 사이트 왼쪽 컨텐츠1</h4></article>
+				<article><h4>반응형 사이트 왼쪽 컨텐츠2</h4></article>
+				<article><h4>반응형 사이트 왼쪽 컨텐츠3</h4></article>
+			</section>
+			<section>
+				<h3>반응형 사이트 가운데 컨텐츠</h3>
+				<article><h4>반응형 사이트 가운데 컨텐츠1</h4></article>
+				<article><h4>반응형 사이트 가운데 컨텐츠2</h4></article>
+				<article><h4>반응형 사이트 가운데 컨텐츠3</h4></article>
+			</section>
+			<section>
+				<h3>반응형 사이트 왼쪽 컨텐츠</h3>
+				<article><h4>반응형 사이트 오른쪽 컨텐츠1</h4></article>
+				<article><h4>반응형 사이트 오른쪽 컨텐츠2</h4></article>
+				<article><h4>반응형 사이트 오른쪽 컨텐츠3</h4></article>
+			</section>
+		</section>
+	</main>
+	<footer>
+		<h2>반응형 사이트 푸터</h2>
+	</footer>
+</body>
+</html>
