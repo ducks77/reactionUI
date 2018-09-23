@@ -66,7 +66,7 @@
 				</div> -->
 				<!-- position구조를 이용한 방법 -->
 				<div class="title">
-					<p>Can See the Futrue, Only Dream</p>
+					<p>표준 웹사이트를 만들기 위한 사이트 구현</p>
 					<h1><a href="#">CuffLink.com</a></h1>
 				</div>
 				<div class="icon"> <!-- ul>li.[class=icon-tit$]*4>a[href="#"]{icon$} -->
@@ -155,7 +155,7 @@
 			<div id="cont-tit">
 				<div class="container">
 					<div class="tit">
-						<h2>&ldquo;나는 퍼블리셔다.&rdquo;</h2>
+						<h2>&ldquo;나는 꿈을 향해 달린다.&rdquo;</h2>
 						<a href="#" class="btn">
 							<span class="ir">전체메뉴버튼</span>
 						</a>
