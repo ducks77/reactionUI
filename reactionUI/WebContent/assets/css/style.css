@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* body 바탕색 작업시 효과적용확인요 */
+body {background-image: url(../img/body_bg.gif); background-color: #f1f4fb;}
+
+/* layout */
+#header {background: url(../img/header_bg.jpg) repeat-x center top; }
+#nav {background: url(../img/cont_nav_bg.png); repeat-x; }
+#tit {background-color: #fff; }
+#contents .container {border-right: 1px solid #000; border-left: 1px solid #000; }
+#cont-left {float: left; width: 250px; height: 500px; border-top: 1px solid #000; }
+#cont-center {overflow: hidden; margin-right: 250px; height: 500px; border-right: 1px solid #000; border-left: 1px solid #000;  border-top: 1px solid #000; }
+#cont-right {position: absolute; right: 0; top: 0px; width: 250px; height: 500px; border-top: 1px solid #000; }
+#footer {width: 100%; height: 200px; border-top:1px solid #000;  }
+
+/* float: left사용시 overflow:hidden대신 사용 */
+.clearfix:after {content: ""; clear: both; display: table; }
+
+/* container 반응형을 위한 가운데정렬 설정 */
+.container {width: 1200px; margin: 0 auto; position: relative; /* background: rgba(0,0,0,0.3); */ }
+
+/* quick */
+.quick {text-align: right; }
+	/* transition: all 0.5s ease; ==>> 슬로우 모션적용 */
+	/* text는 inline속성으로 padding이 적용이 안되어 inline-block적용 */
+.quick a {display: inline-block; color: #fff; padding: 5px 0 4px 10px; transition: all 0.5s ease; }
+	/* 마우스 오버했을때 글자색 효과적용 */
+.quick a:hover {color: #ccc; }
+
+/* title */
+	/* text-transform: uppercase; ==>> 대문자 */
+.title {text-align: center; text-transform: uppercase; padding-top: 75px;}
+.title p {display: inline; font-size: 24px; background-color: #51b0dc; color: #fff; padding: 10px 20px;}
+.title h1 a {display: inline-block; font-size: 14px; color: #fff; background-color: #4a9abf; color: #fff; padding: 10px 20px; margin-top: -4px; }
+
+/* icon-font */
+.icon-font {text-align: center; margin-top: 40px; padding-bottom: 40px;}
+.icon-font ul { }
+.icon-font li {position: relative; display: inline; }
+	/* border-radius: 50%; ==>> 사각의 웹폰트를 원형으로 만들어준다. */
+.icon-font li a {display: inline-block; width: 60px; height: 60px; background-color: #3192bf; color: #fff; font-size: 35px; border-radius: 50%; margin: 0 3px;}
+.icon-font li a:hover {background-color: #42a5f5 ; }
+	/* translateX(-50%); ==>> icon-font를 기준으로 중앙정렬 left를 이용하여 중앙에 오도록 정렬*/ 
+	/* border-radius: 6px 0; ==>> 사각모양의 왼쪽상단 오른쪽하단 둥글게 만들기 */
+.icon-font li a .tool {position: absolute; left: 50%; top: -70px; font-size: 12px; background-color: red; padding: 1px 7px; border-radius: 6px 0; opacity: 0; transform: translateX(-50%); transition: all 0.3s ease-in-out; }
+.icon-font li a:hover .tool {opacity: 1; top: -60px;}
+	/* border-top: 5px solid #3192bf; border-left: 5px solid transparent; border-right: 5px solid transparent; ==>> icon-font의 아래삼각형 만들기 */
+.icon-font li a .tool:before {position: absolute; left: 50%; margin-left: -5px; content: ""; bottom: -5px; border-top: 5px solid red; border-left: 5px solid transparent; border-right: 5px solid transparent; } 
+
+	/* ie7일때 .icon-font 버튼 숨기기 */
+.ie7 .icon-font {display: none; }
+	/* ie8일때 .icon-font의 상단 글자 숨기기 */
+.ie8 .icon-font li a .tool {display: none; }
+
+/* nav */
+.nav {padding: 30px; }
+.nav h2 {font-size: 16px; color: #25a2d0; padding-bottom: 5px; }
+.nav ul { }
+	/* .nav ul li:before {absolute; left: 의 기준으로  ==> .nav ul li {position: relative; 준것이다. */
+.nav ul li {position: relative; float: left; width: 20%; left: 8px; box-sizing: border-box; }
+	/* 메뉴앞에 보더를 이용하여 파란색점 생성되도록  */
+	/* position: absolute; left: 0; top: 8px; ==> 내맘대로 위치정하기(기준점확인필요) */
+.nav ul li:before {position: absolute; left: 0; top: 8px; content: ''; width: 3px; height: 3px; background-color: #25a2d0; border-radius: 50%; }
+.nav ul li a {padding: 5px; margin-left: 5px; border-radius: 2px; transition: all 0.3s ease; }
+.nav ul li a:hover {margin-left: 10px; background-color: #25a2d0; color: #fff; }
+
+/* tit */
+.tit {text-align: center; /* background-color: rgba(0,0,0,0.3); */ }
+	/* Nanum Brush Script 사용 */
+.tit h2 {font-size: 39px; color: #0093bd; font-family: 'Nanum Brush Script'; }
+	/* absolute를 적용했지만 container에 relative설정함. */
+.tit .btn {position: absolute; right: 0; bottom: 0px; }
+.tit .btn a {width: 60px; height: 60px; background-color: #4a9abf; font-size: 55px; border-radius: 50%; line-height: 65px; display: block; color: #fff; }
+.tit .btn a:hover { }
+
+/* section */
+.section { }
+
+
+/* footer */
+.footer { }
+
+
+
+/* mediaquery */
+@media (max-width: 1280px) {
+	/* 스크롤바 안생김 */
+	.container {width: 100%; }
+	/* 양쪽에 여백 주기 */
+	.row {padding: 0 50px;}
+	/* 우측버튼 여백주기 */
+	.tit .btn {margin-right: 15px; }
+	#contents .container {border: 0;}
+}
+
+@media (max-width: 1024px) {
+	/* nav 4개 보이기 */
+	.nav ul li {width: 25%; }
+
+}
+
+@media (max-width: 960px) {
+	#cont-center {margin-right: 0;}
+	#cont-right {position: static; width: 100%;}
+	#cont-center {border-right: 0;}
+}
+
+@media (max-width: 768px) {
+	/* nav 3개 보이기 */
+	.nav ul li {width: 33.3333%; }
+}
+
+@media (max-width: 600px) {
+	/* .title, .icon-font, .nav, .tit . btn 모두 숨기기 */
+	.title, .icon-font, .nav, .tit .btn {display: none;}
+	
+	#cont-left {float: none; width: 100%;}
+	#cont-center {border-left: 0;}
+}
+
+@media (max-width: 480px) {
+	
+}
+
+@media (max-width: 320px) {
+	
+}
