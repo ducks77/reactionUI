@@ -25,6 +25,9 @@
 	<!-- style -->
     <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    
+    <!-- owl.carousel사용을 위한 css 설정 -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/owl.carousel.css" />
    
 	<!-- https://fontawesome.com 웹폰트사용에 필요 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -148,7 +151,7 @@
 	<article id="tit">
 		<div class="container"> <!-- 반응형을 위한 가운데정렬 설정 -->
 			<div class="tit">
-				<h2>&ldquo;나는 퍼블리셔다.&rdquo;</h2>
+				<h2>&ldquo;나는 FullStack 개발자다.&rdquo;</h2>
 				<span class="btn">
 					<a href="#">
 						<i class="fas fa-angle-double-down"></i>
@@ -161,13 +164,154 @@
 		<h2 class="ir">반응형 사이트 컨텐츠</h2>
 		<div class="container">
 			<section id="cont-left">
-				<h3 clsass="ir">반응형 사이트 왼쪽 컨텐츠</h3>
+				<h3 class="ir">반응형 사이트 왼쪽 컨텐츠</h3>
+				<article class="cbox column1">
+					<h4 class="cbox-tit">Menu Title1</h4>
+					<p class="cbox-desc">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</p>
+					<!-- menu -->
+					<div class="menu"><!-- div.menu>ul>li*6>a[href="#"] -->
+						<ul>
+							<li><a href="#">Cafe<i class="fas fa-arrow-right"></i></a></li>
+							<li><a href="#">Standard<i class="fas fa-arrow-right"></i></a></li>
+							<li><a href="#">Tutorial<i class="fas fa-arrow-right"></i></a></li>
+							<li><a href="#">Reference<i class="fas fa-arrow-right"></i></a></li>
+							<li><a href="#">CSS<i class="fas fa-arrow-right"></i></a></li>
+							<li><a href="#">HTML5<i class="fas fa-arrow-right"></i></a></li>
+						</ul>
+					</div>	
+					<!-- //menu -->
+				</article><!-- //cbox column1 -->
+				<article class="cbox column2">
+					<h4 class="cbox-tit">Notice Title2</h4>
+					<p class="cbox-desc">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</p>
+					<!-- notice -->
+						<div class="notice">
+							<h5>Graphic Design</h5>
+							<ul>
+								<li><a href="#">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</a></li>
+								<li><a href="#">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</a></li>
+								<li><a href="#">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</a></li>
+								<li><a href="#">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</a></li>
+							</ul>
+							<span class="more"><a href="#"> more <i class="fas fa-angle-right"></i></a></span>
+						</div>
+					<!-- //notice -->
+					<!-- notice -->
+						<div class="notice mt15">
+							<h5>Graphic Design</h5>
+							<ul>
+								<li><a href="#">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</a></li>
+								<li><a href="#">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</a></li>
+								<li><a href="#">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</a></li>
+								<li><a href="#">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</a></li>
+							</ul>
+							<span class="more"><a href="#"> more <i class="fas fa-angle-right"></i></a></span>
+						</div>
+					<!-- //notice -->
+				</article><!-- //cbox column2 -->
+				<article class="cbox column3">
+					<h4 class="cbox-tit">Blog Title3</h4>
+					<p class="cbox-desc">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</p>
+					<!-- blog -->
+						<div class="blog">
+							<h5>Figure</h5>
+							<figure>
+								<a class="blog-img" href="#">
+									<img src="../assets/img/fullimage1.jpg" alt="blog images" ><em>Blog</em>
+								</a>
+								<figcaption>
+									웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.
+									웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.
+								</figcaption><!-- //figcaption -->
+							</figure><!-- //figure -->
+						</div>
+					<!-- //blog -->
+					<!-- blog2 -->
+						<div class="blog2 mt15">
+							<h5>Figure2</h5>
+							<figure>
+								<a class="blog-img" href="#">
+									<img src="../assets/img/fullimage2.jpg" alt="blog images" ><em>Blog2</em>
+								</a>
+								<figcaption>
+									웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.
+									웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.
+								</figcaption><!-- //figcaption -->
+							</figure><!-- //figure -->
+						</div>
+					<!-- //blog2 -->
+				</article><!-- //cbox column3 -->
 			</section><!-- //cont-left -->
 			<section id="cont-center">
-				<h3 clsass="ir">반응형 사이트 중간 컨텐츠</h3>
+				<h3 class="ir">반응형 사이트 중간 컨텐츠</h3>
+				<article class="cbox column4">
+					<h4 class="cbox-tit">Gallery Title4</h4>
+					<p class="cbox-desc">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</p>
+					<!-- Gallery -->
+						<div class="gallery">
+							<div id="owl-demo" class="owl-carousel owl-theme">
+							  <div class="item"><img src="../assets/img/fullimage1.jpg" alt="The Last of us"></div>
+							  <div class="item"><img src="../assets/img/fullimage2.jpg" alt="GTA V"></div>
+							  <div class="item"><img src="../assets/img/fullimage3.jpg" alt="Mirror Edge"></div>
+							  <div class="item"><img src="../assets/img/fullimage4.jpg" alt="The Last of us"></div>
+							  <div class="item"><img src="../assets/img/fullimage5.jpg" alt="GTA V"></div>
+							  <div class="item"><img src="../assets/img/fullimage6.jpg" alt="Mirror Edge"></div>
+							  <div class="item"><img src="../assets/img/fullimage7.jpg" alt="Mirror Edge"></div>
+							</div>
+						</div>
+					<!-- //Gallery -->
+				</article><!-- //cbox column4 -->
+				<article class="cbox column5">
+					<h4 class="cbox-tit">Title5</h4>
+					<p class="cbox-desc">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</p>
+					<!-- Square -->
+						<div class="square clearfix"><!-- a[href="#"]*10>img[src="../assets/img/s_img$.jpg" alt="이미지$"] -->
+							<a href="#"><img src="../assets/img/s_img01.png" alt="이미지1" /></a>
+							<a href="#"><img src="../assets/img/s_img02.png" alt="이미지2" /></a>
+							<a href="#"><img src="../assets/img/s_img03.png" alt="이미지3" /></a>
+							<a href="#"><img src="../assets/img/s_img04.png" alt="이미지4" /></a>
+							<a href="#"><img src="../assets/img/s_img05.png" alt="이미지5" /></a>
+							<a href="#"><img src="../assets/img/s_img06.png" alt="이미지6" /></a>
+							<a href="#"><img src="../assets/img/s_img07.png" alt="이미지7" /></a>
+							<a href="#"><img src="../assets/img/s_img08.png" alt="이미지8" /></a>
+							<a href="#"><img src="../assets/img/s_img09.png" alt="이미지9" /></a>
+							<a href="#"><img src="../assets/img/s_img10.png" alt="이미지10" /></a>					
+						</div>
+					<!-- //square -->
+				</article><!-- //cbox column5 -->
+				<article class="cbox column6">
+					<h4 class="cbox-tit">Title6</h4>
+					<p class="cbox-desc">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</p>
+					<!-- vedio -->
+						<div class="vedio">
+							<!-- <video class="vedio" autoplay="autoplay" loop="loop">
+								<source src="../assets/img/video.mp4" type="video/mp4"></source>
+							</video> -->
+							<iframe class="iframe" src="https://www.youtube.com/embed/vH7DS8CK9ks" ></iframe>
+						</div><!-- //video -->
+					<!-- //vedio -->
+				</article><!-- //cbox column6 -->
 			</section><!-- //cont-center -->
 			<section id="cont-right">
-				<h3 clsass="ir">반응형 사이트 우측 컨텐츠</h3>
+				<h3 class="ir">반응형 사이트 우측 컨텐츠</h3>
+				<article class="cbox column7">
+					<h4 class="cbox-tit">Title7</h4>
+					<p class="cbox-desc">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</p>
+					<!--  -->
+					<!-- // -->
+				</article><!-- //cbox column7 -->
+				<article class="cbox column8">
+					<h4 class="cbox-tit">Title8</h4>
+					<p class="cbox-desc">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</p>
+					<!--  -->
+					<!-- // -->
+				</article><!-- //cbox column8 -->
+				<article class="cbox column9">
+					<h4 class="cbox-tit">Title9</h4>
+					<p class="cbox-desc">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</p>
+					<!--  -->
+					<!-- // -->
+				</article><!-- //cbox column9 -->
 			</section><!-- //cont-right -->	
 		</div><!-- //container -->
 	</section><!-- //section -->
@@ -180,6 +324,30 @@
 			</div><!-- //row -->
 		</div><!-- //container -->
 	</footer><!-- //footer -->
+	
+	<!-- script -->
+	
+	<!-- owl.carousel Progress Bar을 사용 위한 스크립트 설정 js파일2개 css 3개를 연동해주어야 하며,
+		html, css, javascript코드등도 설정해주어야한다.
+		참고사이트 : http://codejss.tistory.com/category/Gallery/Slider
+		
+		기본파일
+		<link rel="stylesheet" type="text/css" href="../assets/css/owl.carousel.css" />
+		<link rel="stylesheet" type="text/css" href="../assets/css/owl.theme.css" />
+		<link rel="stylesheet" type="text/css" href="../assets/css/owl.transitions.css" />
+		
+		css파일은 모두 owl.carousel.css로 통합함.
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="../assets/js/owl.carousel.min.js"></script>
+		
+		javascript코드는 custom.js에 넣어서 불러오는것으로 설정.
+		<script src="../assets/js/custom.js"></script>
+	 -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../assets/js/owl.carousel.min.js"></script>
+	<script src="../assets/js/custom.js"></script>
+
 </body>
 </html>
 

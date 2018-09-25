@@ -1,24 +1,33 @@
 @charset "UTF-8";
-/* body 바탕색 작업시 효과적용확인요 */
-body {background-image: url(../img/body_bg.gif); background-color: #f1f4fb;}
+/************************************************************************************** body 바탕색 작업시 효과적용확인요 */
+body {background: url(../img/header_bg.jpg) repeat-x; }
 
-/* layout */
-#header {background: url(../img/header_bg.jpg) repeat-x center top; }
+
+/************************************************************************************** layout */
+#header { }
 #nav {background: url(../img/cont_nav_bg.png); repeat-x; }
 #tit {background-color: #fff; }
-#contents .container {border-right: 1px solid #000; border-left: 1px solid #000; }
-#cont-left {float: left; width: 250px; height: 500px; border-top: 1px solid #000; }
-#cont-center {overflow: hidden; margin-right: 250px; height: 500px; border-right: 1px solid #000; border-left: 1px solid #000;  border-top: 1px solid #000; }
-#cont-right {position: absolute; right: 0; top: 0px; width: 250px; height: 500px; border-top: 1px solid #000; }
-#footer {width: 100%; height: 200px; border-top:1px solid #000;  }
+#contents .container {border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb; }
+#cont-left {float: left; width: 250px; border-top: 1px solid #dbdbdb; }
+#cont-center {overflow: hidden; margin-right: 250px; min-height: 1400px; border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb;  border-top: 1px solid #dbdbdb; }
+#cont-right {position: absolute; right: 0; top: 0px; width: 250px; border-top: 1px solid #dbdbdb; }
+#footer {width: 100%; height: 200px; border-top:1px solid #dbdbdb;  }
 
-/* float: left사용시 overflow:hidden대신 사용 */
+
+/************************************************************************************** content */
+	/* 각각 최하단에 border line을 제거하기위해 */
+#cont-left, #cont-center, #cont-right, article:last-child {border-bottom: 0; }
+
+	/*float: left사용시 overflow:hidden대신 사용 */
 .clearfix:after {content: ""; clear: both; display: table; }
 
-/* container 반응형을 위한 가운데정렬 설정 */
+
+/************************************************************************************** container */
+	/* 반응형을 위한 가운데정렬 설정 */
 .container {width: 1200px; margin: 0 auto; position: relative; /* background: rgba(0,0,0,0.3); */ }
 
-/* quick */
+
+/************************************************************************************** quick */
 .quick {text-align: right; }
 	/* transition: all 0.5s ease; ==>> 슬로우 모션적용 */
 	/* text는 inline속성으로 padding이 적용이 안되어 inline-block적용 */
@@ -26,13 +35,15 @@ body {background-image: url(../img/body_bg.gif); background-color: #f1f4fb;}
 	/* 마우스 오버했을때 글자색 효과적용 */
 .quick a:hover {color: #ccc; }
 
-/* title */
+
+/************************************************************************************** title */
 	/* text-transform: uppercase; ==>> 대문자 */
 .title {text-align: center; text-transform: uppercase; padding-top: 75px;}
 .title p {display: inline; font-size: 24px; background-color: #51b0dc; color: #fff; padding: 10px 20px;}
 .title h1 a {display: inline-block; font-size: 14px; color: #fff; background-color: #4a9abf; color: #fff; padding: 10px 20px; margin-top: -4px; }
 
-/* icon-font */
+
+/************************************************************************************** icon-font */
 .icon-font {text-align: center; margin-top: 40px; padding-bottom: 40px;}
 .icon-font ul { }
 .icon-font li {position: relative; display: inline; }
@@ -51,7 +62,8 @@ body {background-image: url(../img/body_bg.gif); background-color: #f1f4fb;}
 	/* ie8일때 .icon-font의 상단 글자 숨기기 */
 .ie8 .icon-font li a .tool {display: none; }
 
-/* nav */
+
+/************************************************************************************** nav */
 .nav {padding: 30px; }
 .nav h2 {font-size: 16px; color: #25a2d0; padding-bottom: 5px; }
 .nav ul { }
@@ -63,25 +75,119 @@ body {background-image: url(../img/body_bg.gif); background-color: #f1f4fb;}
 .nav ul li a {padding: 5px; margin-left: 5px; border-radius: 2px; transition: all 0.3s ease; }
 .nav ul li a:hover {margin-left: 10px; background-color: #25a2d0; color: #fff; }
 
-/* tit */
+
+/************************************************************************************** tit */
 .tit {text-align: center; /* background-color: rgba(0,0,0,0.3); */ }
 	/* Nanum Brush Script 사용 */
 .tit h2 {font-size: 39px; color: #0093bd; font-family: 'Nanum Brush Script'; }
 	/* absolute를 적용했지만 container에 relative설정함. */
-.tit .btn {position: absolute; right: 0; bottom: 0px; }
+.tit .btn {position: absolute; top: 2px; right: 0; bottom: 0px; }
 .tit .btn a {width: 60px; height: 60px; background-color: #4a9abf; font-size: 55px; border-radius: 50%; line-height: 65px; display: block; color: #fff; }
 .tit .btn a:hover { }
 
-/* section */
+
+/************************************************************************************** section */
 .section { }
 
 
-/* footer */
+/************************************************************************************** cbox 공통코드 */
+.cbox {padding: 15px; border-bottom: 1px solid #dbdbdb; }
+.cbox-tit {font-size: 20px; color: #2f7fa6; }
+	/* dashed는 점선효과 */
+.cbox-desc {border-bottom: 1px dashed #000; padding: 15px; margin-bottom: 15px; color: #878787;}
+.cbox.column1 { }
+.cbox.column2 { }
+.cbox.column3 { }
+.cbox.column4 { }
+.cbox.column5 { }
+.cbox.column6 { }
+.cbox.column7 { }
+.cbox.column8 { }
+.cbox.column9 { }
+
+
+/************************************************************************************** menu */
+.menu { }
+	/* .menu li a i {position: absolute; */
+.menu li {position: relative; }
+	/*  transition: all 0.3s ease; 슬로우모션효과  a테그는 inline속성 padding을 주기위해 block속성으로 변경*/
+.menu li a {font-size: 16px; text-transform: uppercase; color: #878787; border-bottom: 1px solid #dbdbdb; padding: 10px; display: block; transition: all 1.0s ease;}
+.menu li a:hover {color: red; background-color: #82FA58;}
+	/* 세로정렬을 위해 top:50%를 주었으나 실제 버튼의 50%를 빼줘야하기 때문에 transform: translateY(-50%) 사용 */
+.menu li a i {position: absolute; right: 10px; top: 50%; transform: translateY(-50%);}
+
+
+/************************************************************************************** notice */
+	/* span테크의 absolute의 기준을 잡기위해 relative를 주었다. */
+.notice {position: relative; }
+.notice h5 {font-size: 14px; color: #2f7fa6; }
+	/* overflow: hidden ==> 넘치는것을 막아준다. */
+	/* text-overflow: ellipsis ==> ...으로 만들어준다.*/
+	/* white-space: nowrap; ==> 한줄로 잘라준다. */
+.notice li {position: relative; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-left: 8px; transition: all 0.5s ease;}
+.notice li:hover {background-color: #82FA58;} 
+.notice li:before {content:''; width: 3px; height: 3px; background-color: #449ce2; position: absolute; left: 0; top: 8px; border-radius: 50%; }
+.notice .more {position: absolute; right: 0; top: 5px; text-transform: uppercase; font-size: 9px;}
+.notice .more a {color: #878787; transition: all 0.3s ease;}
+.notice .more a:hover {color: red; background-color: #82FA58;}
+
+
+/************************************************************************************** blog */
+.blog { }
+.blog h5 {font-size: 14px; color: #2f7fa6; padding-bottom: 3px; }
+	/* 왼쪽에서 들어오는 모션줄경우 overflow: hidden을 줘야 왼쪽밖에서 오는것이 안보임. */
+.blog .blog-img {position: relative; display: block; color: #fff; font-size: 16px; overflow: hidden; margin-bottom: 3px;}
+	/* 기본모션 */
+/* .blog .blog-img:after {position: absolute; left: 0; top: 0; content: ''; background: rgba(0,0,0,0); width: 100%; height: 100%; transition: background 0.3s ease-in-out;} */
+	/* 왼쪽에서 들어오는 모션 :after은 가상요소를 추가로 주는 옵션*/
+.blog .blog-img:after {position: absolute; left: -100%; top: 0; content: ''; background: rgba(0,0,0,0); width: 100%; height: 100%; transition: all 0.3s ease-in-out;}
+.blog .blog-img img {display: block; }
+	/* 기본모션 */
+/* .blog .blog-img:hover:after {background: rgba(0,0,0,0.3);} */
+	/* 왼쪽에서 들어오는 모션 */
+.blog .blog-img:hover:after {background: rgba(0,0,0,0.3); left: 0; }
+	/* 세로 가운데 정렬시 40%주면됨. z-index는 기존값보다 앞으로 보여준다. 값이 높을수록 위에배치 */
+	/* transition 속성은 많이 있으므로 구글링해서 참조할것. */
+	/* 처음에는 opacity: 0 transition효과시 opacity에 적용 */
+.blog .blog-img em {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 100; opacity: 0; transition: all 0.3s ease-in-out; font-size: 0;}
+	/* 마우스 오버했을때 보이도록 설정 */
+.blog .blog-img:hover em {opacity: 1; font-size: 16px;} 
+
+/************************************************************************************** blog2 */
+.blog2 { }
+.blog2 h5 {font-size: 14px; color: #2f7fa6; padding-bottom: 3px; }
+	/* blog-img는 inline요소로써 block로 변경 scale할때 넘치는 부분 hidden적용*/
+.blog2 .blog-img {position: relative; display: block; color: #fff; overflow: hidden; }
+	/* 이미지 크기만큼 background-color적용을 위해서 absolute적용 슬로우모션으로 나타나도록 transition적용*/
+.blog2 .blog-img:after {position: absolute; left: 0; top: 0; content: ''; width: 100%; height: 100%; display: block; background-color: rgba(0,0,0,0); transition: all 0.3s ease-in-out; }
+	/* 마우스 오버시 투명효과적용 */
+.blog2 .blog-img:hover:after {background-color: rgba(0,0,0,0.3);}
+	/*  이미지 기본크기와 슬로우모션 적용 */
+.blog2 .blog-img img {display: block; transform: scale(1,1); transition: all 0.3s ease-in-out; }
+	/*  마우스 오버시 1.5배로 확대 */
+.blog2 .blog-img:hover img {transform: scale(2,2); }
+	/*  글짜 위치지정하기위해 absolute적용 중앙위치 transform, left, top로 적용 z-index로 맨앞으로 슬로우모션 적용*/
+.blog2 .blog-img em {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 100; opacity: 0; transition: all 0.3s ease-in-out; font-size: 0;}
+	/*  마우스 오버시 글자크기와 글자보이기 */
+.blog2 .blog-img:hover em {opacity: 1; font-size: 16px; }
+
+
+/************************************************************************************** square */
+.square { }
+.square a {float: left; width: 19%; margin: 0.5%; }
+.square a img {display: block; }
+
+/************************************************************************************** video */
+.vedio { }
+.vedio .iframe {bottom: 0; width: 100%; height: 400px;}
+
+
+/************************************************************************************** footer */
 .footer { }
 
 
 
-/* mediaquery */
+/************************************************************************************** media query */
 @media (max-width: 1280px) {
 	/* 스크롤바 안생김 */
 	.container {width: 100%; }
@@ -89,6 +195,7 @@ body {background-image: url(../img/body_bg.gif); background-color: #f1f4fb;}
 	.row {padding: 0 50px;}
 	/* 우측버튼 여백주기 */
 	.tit .btn {margin-right: 15px; }
+	
 	#contents .container {border: 0;}
 }
 
@@ -102,11 +209,21 @@ body {background-image: url(../img/body_bg.gif); background-color: #f1f4fb;}
 	#cont-center {margin-right: 0;}
 	#cont-right {position: static; width: 100%;}
 	#cont-center {border-right: 0;}
+	
+	/* 4개보이기 */
+	.square a {float: left; width: 24%; }
+	/* 5번째꺼 안보이게 */
+	.square a:nth-child(5n) {display: none; }
 }
 
 @media (max-width: 768px) {
 	/* nav 3개 보이기 */
 	.nav ul li {width: 33.3333%; }
+	
+	/* 3개 보이기 */
+	.square a {width: 32.333333%;}
+	/*  5번째꺼 보이기*/
+	.square a:nth-child(5) {display: block;}
 }
 
 @media (max-width: 600px) {
@@ -115,6 +232,25 @@ body {background-image: url(../img/body_bg.gif); background-color: #f1f4fb;}
 	
 	#cont-left {float: none; width: 100%;}
 	#cont-center {border-left: 0;}
+	
+	.cbox.column1 {padding: 0; border-bottom: 0; }
+	.cbox.column1 .cbox-tit {display: none; }
+	.cbox.column1 .cbox-desc {display: none; }
+	.cbox.column1 .menu li a i {display: none; }
+		/* float: left를 주었기 때문에 hidden을 줌. clearfix를 사용해도됨 */
+	.cbox.column1 .menu ul {overflow: hidden;}
+		/* box-sizing: border-box는 박스포함하여 border를 재계산한다. 화면깨짐방지 */
+	.cbox.column1 .menu li {float: left; width: 33.3333%; border-right: 1px solid #dbdbdb; box-sizing: border-box; text-align: center; }
+	.cbox.column1 .menu li:nth-child(3n) {border-right: 0;}
+		/* text에 그림자 효과 */
+	.cbox.column1 .menu li a {color: #fff; text-shadow: 0 0 5px rgba(0,0,0,0.5); }
+	
+	.cbox.column2 {background-color: #f1f4fb; }
+	
+	/* 3개 보이기 */
+	.square a {width: 49%;}
+	/* 5번째꺼 안보이게 */
+	.square a:nth-child(5n) {display: none; }
 }
 
 @media (max-width: 480px) {
@@ -122,5 +258,6 @@ body {background-image: url(../img/body_bg.gif); background-color: #f1f4fb;}
 }
 
 @media (max-width: 320px) {
+	.square a {width: 98%; margin: 1%; }
 	
 }

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* 여백 초기화 */
 body, div, dl, dd, dt, ul, li, ol, h1, h2, h3, h4, h5, h6, 
-form, input, legend, textarea, select, fieldset, p, button {margin:0px; padding:0px;}
+form, input, legend, textarea, select, fieldset, p, button, figure, figcaption {margin:0px; padding:0px;}
 
 /* 링크 초기화 */
 a {color: #273743; text-decoration: none; }
@@ -22,6 +22,20 @@ li, ol, ul {list-style: none;}
 /* 이탤릭체 초기화 */
 
 em, address {font-style: normal;}
+
+/* 시멘틱 태그 블록화 Html5사용시 추가 */
+section, article, aside, figure, gigcaptin, footer, header, menu, nav, details {display: block;}
+
+/* 반응형 이미지 */
+img, video {width: 100%;}
+
+/* 가로 모드 글씨 크기 초기화 */
+html {/* 벤더프리픽스 아이폰 가로모드글씨확대방지*/
+	font-size: 100%;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+}
+
 
 /* 테두리 초기화 */
 img, fieldset {border: 0;}
