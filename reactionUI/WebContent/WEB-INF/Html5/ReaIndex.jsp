@@ -28,6 +28,11 @@
     
     <!-- owl.carousel사용을 위한 css 설정 -->
     <link rel="stylesheet" type="text/css" href="../assets/css/owl.carousel.css" />
+    
+    <!-- lightgallery css 사용코드 -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/lightgallery.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/lg-transitions.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/lg-fb-comment-box.css" />
    
 	<!-- https://fontawesome.com 웹폰트사용에 필요 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -154,7 +159,7 @@
 				<h2>&ldquo;나는 FullStack 개발자다.&rdquo;</h2>
 				<span class="btn">
 					<a href="#">
-						<i class="fas fa-angle-double-down"></i>
+						<i id="m_btn" class="fas fa-angle-double-down"></i>
 					</a>
 				</span><!-- //btn -->
 			</div><!-- //tit -->
@@ -265,17 +270,17 @@
 					<h4 class="cbox-tit">Title5</h4>
 					<p class="cbox-desc">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</p>
 					<!-- Square -->
-						<div class="square clearfix"><!-- a[href="#"]*10>img[src="../assets/img/s_img$.jpg" alt="이미지$"] -->
-							<a href="#"><img src="../assets/img/s_img01.png" alt="이미지1" /></a>
-							<a href="#"><img src="../assets/img/s_img02.png" alt="이미지2" /></a>
-							<a href="#"><img src="../assets/img/s_img03.png" alt="이미지3" /></a>
-							<a href="#"><img src="../assets/img/s_img04.png" alt="이미지4" /></a>
-							<a href="#"><img src="../assets/img/s_img05.png" alt="이미지5" /></a>
-							<a href="#"><img src="../assets/img/s_img06.png" alt="이미지6" /></a>
-							<a href="#"><img src="../assets/img/s_img07.png" alt="이미지7" /></a>
-							<a href="#"><img src="../assets/img/s_img08.png" alt="이미지8" /></a>
-							<a href="#"><img src="../assets/img/s_img09.png" alt="이미지9" /></a>
-							<a href="#"><img src="../assets/img/s_img10.png" alt="이미지10" /></a>					
+						<div class="square clearfix" id="lightgallery"><!-- a[href="#"]*10>img[src="../assets/img/s_img$.jpg" alt="이미지$"] -->
+							<a href="../assets/img/s_img01.png"><img src="../assets/img/s_img01s.jpg" alt="이미지1" /></a>
+							<a href="../assets/img/s_img02.png"><img src="../assets/img/s_img02s.jpg" alt="이미지2" /></a>
+							<a href="../assets/img/s_img03.png"><img src="../assets/img/s_img03s.jpg" alt="이미지3" /></a>
+							<a href="../assets/img/s_img04.png"><img src="../assets/img/s_img04s.jpg" alt="이미지4" /></a>
+							<a href="../assets/img/s_img05.png"><img src="../assets/img/s_img05s.jpg" alt="이미지5" /></a>
+							<a href="../assets/img/s_img06.png"><img src="../assets/img/s_img06s.jpg" alt="이미지6" /></a>
+							<a href="../assets/img/s_img07.png"><img src="../assets/img/s_img07s.jpg" alt="이미지7" /></a>
+							<a href="../assets/img/s_img08.png"><img src="../assets/img/s_img08s.jpg" alt="이미지8" /></a>
+							<a href="../assets/img/s_img09.png"><img src="../assets/img/s_img09s.jpg" alt="이미지9" /></a>
+							<a href="../assets/img/s_img10.png"><img src="../assets/img/s_img10s.jpg" alt="이미지10" /></a>					
 						</div>
 					<!-- //square -->
 				</article><!-- //cbox column5 -->
@@ -297,20 +302,48 @@
 				<article class="cbox column7">
 					<h4 class="cbox-tit">Title7</h4>
 					<p class="cbox-desc">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</p>
-					<!--  -->
-					<!-- // -->
+					<!-- img1 -->
+						<figure class="img1 rotate">
+							<a href="#">
+								<div class="front">
+									<img src="../assets/img/go1.jpg" alt="이미지1" />
+								</div>
+								<div class="back">
+									<figcaption class="back-commet">
+										<i class="far fa-angry fa-4x"></i>
+										<p>뒤에 아무것도 없다,....</p>
+									</figcaption>
+								</div>
+							</a>
+						</figure>
+					<!-- //img1 -->
 				</article><!-- //cbox column7 -->
 				<article class="cbox column8">
 					<h4 class="cbox-tit">Title8</h4>
 					<p class="cbox-desc">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</p>
-					<!--  -->
-					<!-- // -->
+					<!-- img2 -->
+						<figure class="img2 rotate2">
+							<a href="#">
+								<div>
+									<img src="../assets/img/go2.jpg" alt="이미지2" />
+								</div>
+								<div class="op-comment">
+									<figcaption>
+										<p class="f-commet">comment</p>
+									</figcaption>
+								</div>
+							</a>						
+						</figure>
+					<!-- //img2 -->
 				</article><!-- //cbox column8 -->
 				<article class="cbox column9">
 					<h4 class="cbox-tit">Title9</h4>
 					<p class="cbox-desc">웹 퍼블리싱과 관련된 정보 공유 및 교육을 위한 사이트 입니다.</p>
-					<!--  -->
-					<!-- // -->
+					<!-- img3 -->
+						<figure class="img3">
+							<img src="../assets/img/go3.jpg" alt="이미지3" />						
+						</figure>
+					<!-- //img3 -->
 				</article><!-- //cbox column9 -->
 			</section><!-- //cont-right -->	
 		</div><!-- //container -->
@@ -318,8 +351,21 @@
 	<footer id="footer">
 		<div class="container">
 			<div class="row">
-				<div class="footer">
-					footer
+				<div class="footer"><!-- ul>li*7>a[href="#"] -->
+					<ul>
+						<li><a href="#">사이트 도움말</a></li>
+						<li><a href="#">사이트 이용약관</a></li>
+						<li><a href="#">사이트 운영원칙</a></li>
+						<li><a href="#"><strong>개인정보취급방침</strong></a></li>
+						<li><a href="#">책임의 한계와 법적고지</a></li>
+						<li><a href="#">게시중단요청서비스</a></li>
+						<li><a href="#">고객센터</a></li>
+					</ul>
+					<address>
+						<em>Copyright &copy;
+						<a href="#"><strong>CuffLink</strong></a>
+						All Rights Reserved.</em>
+					</address>
 				</div><!-- //footer -->
 			</div><!-- //row -->
 		</div><!-- //container -->
@@ -327,11 +373,12 @@
 	
 	<!-- script -->
 	
-	<!-- owl.carousel Progress Bar을 사용 위한 스크립트 설정 js파일2개 css 3개를 연동해주어야 하며,
+	<!--center gallery에 적용한 기능구현에 필요한 소스코드 
+		owl.carousel Progress Bar을 사용 위한 스크립트 설정 js파일2개 css 3개를 연동해주어야 하며,
 		html, css, javascript코드등도 설정해주어야한다.
 		참고사이트 : http://codejss.tistory.com/category/Gallery/Slider
 		
-		기본파일
+		필요한 기본파일
 		<link rel="stylesheet" type="text/css" href="../assets/css/owl.carousel.css" />
 		<link rel="stylesheet" type="text/css" href="../assets/css/owl.theme.css" />
 		<link rel="stylesheet" type="text/css" href="../assets/css/owl.transitions.css" />
@@ -347,7 +394,24 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="../assets/js/owl.carousel.min.js"></script>
 	<script src="../assets/js/custom.js"></script>
-
+	
+	<!-- lightgallery 사용코드 
+	참고사이트 : https://github.com/sachinchoolur/lightgallery.js
+	
+	필요한 기본파일
+	<script src="../assets/js/lightgallery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../assets/css/lightgallery.css" />
+	해당 파일의 font 필요(버튼적용) 옵션 필요여부에 따라서 css파일추가하면됨.
+	
+	 -->
+	<script src="../assets/js/lightgallery.min.js"></script>
+	<script>
+		lightGallery(document.getElementById('lightgallery'), {
+		    mode: 'lg-tube'
+		    /* cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)' */
+		});
+	</script>
+	
 </body>
 </html>
 

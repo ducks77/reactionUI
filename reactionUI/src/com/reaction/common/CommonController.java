@@ -9,6 +9,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CommonController {
 	Logger logger = Logger.getLogger(CommonController.class);
 	
+	//반응형 화면으로 보기
+	@RequestMapping("/modeView")
+	public String modeView() {
+		logger.info("modeView 호출성공");
+		return "modeView/modeView";
+	}
+	
+	
 	//반응형 사이트 만들기 예제5 호출하기
 	@RequestMapping("/ReactionSite5")
 	public String ReactionSite5() {

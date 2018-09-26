@@ -45,6 +45,7 @@
 		<h2>반응형 사이트 만들기</h2>
 		<h2>레이아웃 연습</h2>
 		<ul>
+			<li><a href="../Site/modeView">modeView</a></li>
 			<li><a href="../Site/ReaIndex">ReaIndex</a></li>
 			<li><a href="../Site/ReaOutliner">ReaOutliner</a></li>
 			<li><a href="../Site/ReactionSite3">3</a></li>
