@@ -1,5 +1,22 @@
 $(document).ready(function() {
 
+	//채팅문의시작
+	
+	$(".chatbtn").click(function (e){
+		e.preventDefault();
+		$(".chatbtn").hide('fast');
+		$(".chatwin").slideToggle("show");
+	})
+	
+	//채팅문의종료
+	
+	$(".chatinputbtn").click(function (e){
+		e.preventDefault();
+		$(".chatbtn").slideToggle("show");
+		$(".chatwin").slideToggle("hide");
+	})
+	
+	
 	//전체 메뉴
 	
 		// btn버튼을 클릭하면 

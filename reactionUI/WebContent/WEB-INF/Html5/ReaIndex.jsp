@@ -368,6 +368,21 @@
 					</address>
 				</div><!-- //footer -->
 			</div><!-- //row -->
+			<!-- chatting -->
+			<div class="chat-right">
+				<h3 class="ir">반응형 사이트 우측 채팅버튼</h3>
+				<div id="chatbtn" class="chatbtn">
+					<a href="#"><p>채팅문의</p></a>
+				</div>
+				<div id="chatwin" class="chatwin" >
+					<div class="chatview">
+					</div>
+					<div class="chatinputbtn">
+						<a href="#"><p>채팅종료</p></a>
+					</div>
+				</div>
+			</div>
+			<!-- //chatting -->
 		</div><!-- //container -->
 	</footer><!-- //footer -->
 	
