@@ -10,7 +10,7 @@ $(document).ready(function() {
 	
 	//채팅문의종료
 	
-	$(".chatinputbtn").click(function (e){
+	$(".t-right").click(function (e){
 		e.preventDefault();
 		$(".chatbtn").slideToggle("show");
 		$(".chatwin").slideToggle("hide");

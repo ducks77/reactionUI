@@ -372,13 +372,44 @@
 			<div class="chat-right">
 				<h3 class="ir">반응형 사이트 우측 채팅버튼</h3>
 				<div id="chatbtn" class="chatbtn">
-					<a href="#"><p>채팅문의</p></a>
+					<a href="#"><p><i class="fas fa-comment-dots "></i> 채팅문의</p></a>
 				</div>
 				<div id="chatwin" class="chatwin" >
-					<div class="chatview">
+					<div class="chat-top">
+						<div class="t-left">
+							<a href="#">
+								<i class="fas fa-cog fa-2x"></i>
+							</a>
+						</div>
+						<div class="t-center">
+							CuffLink 상담실
+						</div>
+						<div class="t-right">
+							<a href="#">
+								<i class="fas fa-times fa-2x"></i>
+							</a>
+						</div>
 					</div>
-					<div class="chatinputbtn">
-						<a href="#"><p>채팅종료</p></a>
+					<div class="chat-middle">
+						<div class="c-middle">
+							CuffLink에 방문해주셔서 감사합니다.<br>
+							궁금하신 점이 있으시면 질문해주세요 :)
+						</div>
+					</div>
+					<div class="chat-bottom">
+						<div class="b-left">
+							<a href="#">
+								<i class="fas fa-paperclip fa-2x"></i>
+							</a>
+						</div>
+						<div class="b-center">
+							<input type="text" id="q-input" name="q-input" />
+						</div>
+						<div class="b-right">
+							<a href="#">
+								<i class="fas fa-arrow-circle-right fa-2x"></i>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
