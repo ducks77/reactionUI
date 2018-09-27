@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/lg-transitions.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/lg-fb-comment-box.css" />
    
-	<!-- https://fontawesome.com 웹폰트사용에 필요 -->
+	<!-- https://fontawesome.com 웹폰트사용에 필요 채팅문의에 들어간 아이콘이미지-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	
 	<!-- HTML5shiv Explorer 9이하버전의 경우 아래의 스크립트를 실행하시오 -->
@@ -369,6 +369,10 @@
 				</div><!-- //footer -->
 			</div><!-- //row -->
 			<!-- chatting -->
+			<!-- 채팅문의 UI사용하기위해 필요한 파일과 내용			 -->
+			<!-- "WebContent/assets/js/custom.js" 채팅관련 스크립트 -->
+			<!-- css폴더에 awesome.css, min.css -->
+			<!-- fonts폴더의 awesome파일들 -->
 			<div class="chat-right">
 				<h3 class="ir">반응형 사이트 우측 채팅버튼</h3>
 				<div id="chatbtn" class="chatbtn">

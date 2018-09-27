@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MainPage {
 	
+	
 	//reaction UI
 	@RequestMapping("/Index")
 	public String Index() {
@@ -15,7 +16,7 @@ public class MainPage {
 	public String MainIndex() {
 		return "GridFlexUI/MainIndex";
 	}
-	//테스트화면
+	//�뀒�뒪�듃�솕硫�
 	@RequestMapping("/GridTest")
 	public String GridTest() {
 		return "test/GridTest";
@@ -57,200 +58,200 @@ public class MainPage {
 		return "test/newfile4";
 	}
 	
-	//메인화면
+	//硫붿씤�솕硫�
 	@RequestMapping("/")
 	public String mainpage() {
 		return "common/main";
 	}
 
-	//로그인
+	//濡쒓렇�씤
 	@RequestMapping("/login")
 	public String login() {
 		return "auth/login";
 	}
-	//타사로그인
+	//���궗濡쒓렇�씤
 	@RequestMapping("/otherJoin")
 	public String otherJoin() {
 		return "auth/otherJoin";
 	}
-	//로그인성공
+	//濡쒓렇�씤�꽦怨�
 	@RequestMapping("/loginSuccess")
 	public String loginSuccess() {
 		return "auth/loginSuccess";
 	}
-	//회원가입
+	//�쉶�썝媛��엯
 	@RequestMapping("/join")
 	public String join() {
 		return "auth/join";
 	}
-	//프로젝트 찾기
+	//�봽濡쒖젥�듃 李얘린
 	@RequestMapping("/projectFind")
 	public String projectFind() {
 		return "clients/projectFind";
 	}
-	//프로젝트 등록
+	//�봽濡쒖젥�듃 �벑濡�
 	@RequestMapping("/projectRegister")
 	public String projectRegister() {
 		return "clients/projectRegister";
 	}
-	//파트너스 목록
+	//�뙆�듃�꼫�뒪 紐⑸줉
 	@RequestMapping("/partnersList")
 	public String partnersList() {
 		return "partners/partnersList";
 	}	
 	
-//*********************************	클라이언트 로그인 네비게이터 메뉴
-	//프로젝트 검수중
+//*********************************	�겢�씪�씠�뼵�듃 濡쒓렇�씤 �꽕鍮꾧쾶�씠�꽣 硫붾돱
+	//�봽濡쒖젥�듃 寃��닔以�
 	@RequestMapping("/projectSubmitted")
 	public String projectSubmitted() {
 		return "/clients/manage/project/projectSubmitted";
 	}
-	//프로젝트 지원자 모집중
+	//�봽濡쒖젥�듃 吏��썝�옄 紐⑥쭛以�
 	@RequestMapping("/projectRecruiting")
 	public String projectRecruiting() {
 		return "/clients/manage/projectRecruiting";
 	}
-	//프로젝트 진행중인 프로젝트
+	//�봽濡쒖젥�듃 吏꾪뻾以묒씤 �봽濡쒖젥�듃
 	@RequestMapping("/projectContractInProgress")
 	public String projectContractInProgress() {
 		return "/clients/manage/projectContractInProgress";
 	}
-	//프로젝트 종료된 프로젝트
+	//�봽濡쒖젥�듃 醫낅즺�맂 �봽濡쒖젥�듃
 	@RequestMapping("/projectReviewContract")
 	public String projectReviewContract() {
 		return "/clients/manage/projectReviewContract";
 	}
-//*********************************	클라이언트 로그인 네비게이터 메뉴
+//*********************************	�겢�씪�씠�뼵�듃 濡쒓렇�씤 �꽕鍮꾧쾶�씠�꽣 硫붾돱
 	
-//*********************************	클라이언트 로그인 네비게이터 검수 하위메뉴
-	//프로젝트 검수중
-	//네비게이터의 검수중메뉴와 동일
+//*********************************	�겢�씪�씠�뼵�듃 濡쒓렇�씤 �꽕鍮꾧쾶�씠�꽣 寃��닔 �븯�쐞硫붾돱
+	//�봽濡쒖젥�듃 寃��닔以�
+	//�꽕鍮꾧쾶�씠�꽣�쓽 寃��닔以묐찓�돱�� �룞�씪
 	
-	//프로젝트 임시저장
+	//�봽濡쒖젥�듃 �엫�떆���옣
 	@RequestMapping("/projectSaved")
 	public String projectSaved() {
 		return "/clients/manage/project/projectSaved";
 	}
-	//프로젝트 등록실패
+	//�봽濡쒖젥�듃 �벑濡앹떎�뙣
 	@RequestMapping("/projectRejected")
 	public String projectRejected() {
 		return "/clients/manage/project/projectRejected";
 	}
-//*********************************	클라이언트 로그인 네비게이터 검수 하위메뉴	
+//*********************************	�겢�씪�씠�뼵�듃 濡쒓렇�씤 �꽕鍮꾧쾶�씠�꽣 寃��닔 �븯�쐞硫붾돱	
 	
-//*********************************	클라이언트 로그인 네비게이터 검수 하위메뉴
-	//프로젝트 종료된 프로젝트
-	//네비게이터의 종료된 프로젝트 메뉴와 동일
+//*********************************	�겢�씪�씠�뼵�듃 濡쒓렇�씤 �꽕鍮꾧쾶�씠�꽣 寃��닔 �븯�쐞硫붾돱
+	//�봽濡쒖젥�듃 醫낅즺�맂 �봽濡쒖젥�듃
+	//�꽕鍮꾧쾶�씠�꽣�쓽 醫낅즺�맂 �봽濡쒖젥�듃 硫붾돱�� �룞�씪
 	
-	//프로젝트 완료된 프로젝트
+	//�봽濡쒖젥�듃 �셿猷뚮맂 �봽濡쒖젥�듃
 	@RequestMapping("/projectCompletedContract")
 	public String projectCompletedContract() {
 		return "/clients/manage/projectCompletedContract";
 	}
-	//프로젝트 취소한 프로젝트
+	//�봽濡쒖젥�듃 痍⑥냼�븳 �봽濡쒖젥�듃
 	@RequestMapping("/projectCancelledProject")
 	public String projectCancelledProject() {
 		return "/clients/manage/projectCancelledProject";
 	}
-//*********************************	클라이언트 로그인 네비게이터 검수 하위메뉴	
+//*********************************	�겢�씪�씠�뼵�듃 濡쒓렇�씤 �꽕鍮꾧쾶�씠�꽣 寃��닔 �븯�쐞硫붾돱	
 	
-//*********************************	클라이언트 로그인 우측 클라이언트 정보메뉴	
+//*********************************	�겢�씪�씠�뼵�듃 濡쒓렇�씤 �슦痢� �겢�씪�씠�뼵�듃 �젙蹂대찓�돱	
 
-	//마이 커프링크
+	//留덉씠 而ㅽ봽留곹겕
 	@RequestMapping("/ClientMyCufflink")
 	public String ClientMyCufflink() {
 		return "/clients/ClientMyCufflink";
 	}
 	//---------------------------------------
-	//프로젝트 클라이언트 정보
+	//�봽濡쒖젥�듃 �겢�씪�씠�뼵�듃 �젙蹂�
 	@RequestMapping("/ClientInfo")
 	public String ClientInfo() {
 		return "/clients/info/ClientInfo";
 	}
-	//프로젝트 클라이언트 정보등록
+	//�봽濡쒖젥�듃 �겢�씪�씠�뼵�듃 �젙蹂대벑濡�
 	@RequestMapping("/ClientInfoUpdate")
 	public String ClientInfoUpdate() {
 		return "/clients/info/ClientInfoUpdate";
 	}
-	//프로젝트 프로젝트 히스토리
+	//�봽濡쒖젥�듃 �봽濡쒖젥�듃 �엳�뒪�넗由�
 	@RequestMapping("/ClientProjectHistory")
 	public String ClientProjectHistory() {
 		return "/clients/ClientProjectHistory";
 	}	
 	//---------------------------------------
-	//계정설정 - 기본수정 
+	//怨꾩젙�꽕�젙 - 湲곕낯�닔�젙 
 	@RequestMapping("/ClientProfile")
 	public String ClientProfile() {
 		return "/auth/clientSettings/ClientProfile";
 	}
-	//계정설정 - 계좌관리
+	//怨꾩젙�꽕�젙 - 怨꾩쥖愿�由�
 	@RequestMapping("/ClientBankAccount")
 	public String ClientBankAccount() {
 		return "/auth/clientSettings/ClientBankAccount";
 	}
-	//계정설정 - 코인충전페이지
+	//怨꾩젙�꽕�젙 - 肄붿씤異⑹쟾�럹�씠吏�
 	@RequestMapping("/ClientAddcoin")
 	public String ClientAddcoin() {
 		return "/auth/clientSettings/ClientAddcoin";
 	}
-	//계정설정 - 비밀번호변경
+	//怨꾩젙�꽕�젙 - 鍮꾨�踰덊샇蹂�寃�
 	@RequestMapping("/ClientRelogin")
 	public String ClientRelogin() {
 		return "/auth/clientSettings/ClientRelogin";
 	}
-	//계정설정 - 알림설정
+	//怨꾩젙�꽕�젙 - �븣由쇱꽕�젙
 	@RequestMapping("/ClientNotificationSetting")
 	public String ClientNotificationSetting() {
 		return "/auth/clientSettings/ClientNotificationSetting";
 	}
-	//계정설정 - 회원탈퇴
+	//怨꾩젙�꽕�젙 - �쉶�썝�깉�눜
 	@RequestMapping("/ClientWithdrawal")
 	public String ClientWithdrawal() {
 		return "/auth/clientSettings/ClientWithdrawal";
 	}
 	//---------------------------------------
 	
-//*********************************	클라이언트 로그인 우측 클라이언트 정보메뉴
+//*********************************	�겢�씪�씠�뼵�듃 濡쒓렇�씤 �슦痢� �겢�씪�씠�뼵�듃 �젙蹂대찓�돱
 	
-	//휴대폰을 통한 지문인식
+	//�쑕���룿�쓣 �넻�븳 吏�臾몄씤�떇
 	@RequestMapping("/fingerprint")
 	public String fingerprint() {
 		return "/auth/fingerprint";
 	}
-	//비밀번호찾기
+	//鍮꾨�踰덊샇李얘린
 	@RequestMapping("/idpassfind")
 	public String idpassfind() {
 		return "/auth/idpassfind";
 	}
-	//qr코드
+	//qr肄붾뱶
 	@RequestMapping("/qrcode")
 	public String qrcode() {
 		return "/auth/qrcode";
 	}
-	//채팅화면
+	//梨꾪똿�솕硫�
 	@RequestMapping("/chat")
 	public String chat() {
 		return "/chat/chat";
 	}
 	
-//*********************************	클라이언트 관리자 화면
-	//관리자 로그인 화면
+//*********************************	�겢�씪�씠�뼵�듃 愿�由ъ옄 �솕硫�
+	//愿�由ъ옄 濡쒓렇�씤 �솕硫�
 	@RequestMapping("/adminLogin")
 	public String adminLogin() {
 		return "/admin/adminLogin";
 	}
-	//관리자 메인화면
+	//愿�由ъ옄 硫붿씤�솕硫�
 	@RequestMapping("/adminMain")
 	public String adminMain() {
 		return "/admin/adminMain";
 	}
-	//관리자 비밀번호찾기
+	//愿�由ъ옄 鍮꾨�踰덊샇李얘린
 	@RequestMapping("/adminLoginFind")
 	public String adminLoginFind() {
 		return "/admin/adminLoginFind";
 	}
 		
-//*********************************	클라이언트 관리자 화면		
+//*********************************	�겢�씪�씠�뼵�듃 愿�由ъ옄 �솕硫�		
 
 
 }

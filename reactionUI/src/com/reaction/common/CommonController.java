@@ -9,6 +9,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CommonController {
 	Logger logger = Logger.getLogger(CommonController.class);
 	
+	//test 예제1 호출하기
+		@RequestMapping("/test")
+		public String test() {
+			logger.info("test 호출성공");
+			return "Html5/test";
+		}
+	
+	
+	
 	//반응형 화면으로 보기
 	@RequestMapping("/modeView")
 	public String modeView() {
