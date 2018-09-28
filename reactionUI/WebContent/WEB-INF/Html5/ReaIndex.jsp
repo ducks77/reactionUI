@@ -62,9 +62,22 @@
 	 <!-- webfont -->
      <link href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
      <link href="https://fonts.googleapis.com/earlyaccess/nanumbrushscript.css" rel="stylesheet">
-	 
+	<style>
+		#loading { width: 100%; height: 100%; top: 0px; left: 0px; position: fixed; display: block; opacity: 0.7; background-color: #fff; z-index: 99; text-align: center; }  
+		#loading-image { position: absolute; top: 50%; left: 50%; z-index: 100; }
+	</style>
 	</head>
 <body>
+
+	<!-- 화면 로딩중에 대신나올 화면 -->
+	<script type="text/javascript">   
+		$(this).load(function() {     
+ 			$('#loading').hide();   
+		}); 
+	</script>
+	<div id="loading"><img id="loading-image" src="../assets/img/loading.gif" alt="Loading..." /></div>
+	<!-- 화면 로딩중에 필요한 스크립트 -->
+	
 	<header id="header">
 		<div class="container">
 			<div class="row">

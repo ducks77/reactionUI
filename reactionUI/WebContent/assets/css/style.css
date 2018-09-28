@@ -18,30 +18,38 @@ body {background: url(../img/header_bg.jpg) repeat-x; }
 
 
 /************************************************************************************** chatting */
-
 #chatbtn {display: block; }
 #chatbtn.show {display: none; }
 #chatwin {display: none; }
 #chatwin.show {display: block; }
 
-.chat-right { text-align: center; box-sizing: border-box;}
-.chat-right .chatbtn a { color: #fff; font-size: 20px;  position: fixed; right: 0; bottom: 0; background-color: #5698ff; width:150px; height: 50px; margin: 30px; padding-top: 2px; border-radius: 30px; }
-.chat-right .chatbtn a i {font-size: 25px; margin-top: 7px; }
+.chat-right {box-sizing: border-box; }
+.chat-right .chatbtn {border: 1px solid #fff; position: fixed; right: 0; bottom: 0; background-color: #5698ff; width:150px; height: 50px; margin: 30px; padding-top: 0px; border-radius: 30px; }
+/* 아이콘과 text가운데 가운데 정렬시  */
+.chat-right .chatbtn a {display:flex; justify-content:center; align-items:center; vertical-align: middle; color: #fff; font-size: 16px; height: 50px; }
+.chat-right .chatbtn a p {display: table-cell;  }
+.chat-right .chatbtn a i {vertical-align: middle; font-size: 25px; margin-top: 0px; }
 .chat-right .chatbtn a:hover { }
-.chat-right .chatwin {position: fixed; right: 0; bottom: 0; background-color: #5698ff; width: 300px; height: 500px; margin: 30px; transition: all 0.2s ease-out-in; border-radius: 25px;  }
+/***** 화면구성 */
+.chat-right .chatwin {position: fixed; right: 0; bottom: 0; background-color: #5698ff; width: 300px; height: 500px; margin: 30px; transition: all 0.2s ease-out-in; border-radius: 25px; }
+/**** 상단메뉴 */
 .chat-right .chatwin .chat-top {width: 100%; height: 50px; padding: 10px;  box-sizing: border-box; }
 .chat-right .chatwin .chat-top .t-left {float: left; width: 10%; }
+.chat-right .chatwin .chat-top .t-left a {color: #000; }
 .chat-right .chatwin .chat-top .t-left a:hover {color: #fff; }
 .chat-right .chatwin .chat-top .t-center {float: left; font-size: 16px; item-align: center; width: 80%; color: #fff;}
 .chat-right .chatwin .chat-top .t-right {float: left; width: 10%; }
+.chat-right .chatwin .chat-top .t-right a {color: #000; }
 .chat-right .chatwin .chat-top .t-right a:hover {color: #fff; }
-.chat-right .chatwin .chat-middle {width: 100%; height: 80%; background-color: #CEF6EC; border: 1px solid #dedede; box-sizing: border-box; padding: 10px;}
+/***** 중간화면 */
+.chat-right .chatwin .chat-middle {width: 100%; height: 80%; color: #000; background-color: #CEF6EC; border: 1px solid #dedede; box-sizing: border-box; padding: 10px;}
+/***** 하단메뉴 */
 .chat-right .chatwin .chat-bottom { }
 .chat-right .chatwin .chat-bottom .b-left {padding-top: 10px; padding-left: 15px; float: left; width: 10%; box-sizing: border-box; }
 .chat-right .chatwin .chat-bottom .b-left a {color: #000; }
 .chat-right .chatwin .chat-bottom .b-left a:hover {color: #fff; }
 .chat-right .chatwin .chat-bottom .b-center {float: left; font-size: 16px; item-align: center; width: 78%; color: #000; }
-.chat-right .chatwin .chat-bottom .b-center input {border: 1px solid #fff; line-height: 48px; background-color: #5698ff; width:85%; }
+.chat-right .chatwin .chat-bottom .b-center input {border-top: 0px solid #fff; border-bottom: 1px solid #fff; border-left: 1px solid #fff; border-right: 1px solid #fff;line-height: 47px; background-color: #5698ff; width:85%; }
 .chat-right .chatwin .chat-bottom .b-right {padding-top: 10px; padding-right: 25px; float: left; width: 10%; box-sizing: border-box; }
 .chat-right .chatwin .chat-bottom .b-right a {color: #000; }
 .chat-right .chatwin .chat-bottom .b-right a:hover {color: #fff;}
@@ -251,6 +259,12 @@ body {background: url(../img/header_bg.jpg) repeat-x; }
 .footer ul li:first-child:before {width: 0; }
 .footer ul li a { }
 .footer .address {padding-top: 15px; }
+
+/************************************************************************************** screen loading */
+
+#loading { width: 100%; height: 100%; top: 0px; left: 0px; position: fixed; display: block; opacity: 0.7; background-color: #fff; z-index: 99; text-align: center; }  
+#loading-image { position: absolute; top: 50%; left: 50%; z-index: 100; } 
+
 
 /************************************************************************************** media query */
 @media (max-width: 1280px) {
