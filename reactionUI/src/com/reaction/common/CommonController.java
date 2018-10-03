@@ -9,6 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CommonController {
 	Logger logger = Logger.getLogger(CommonController.class);
 	
+	//jquery 예제
+	@RequestMapping("/day1")
+	public String day1() {
+		logger.info("day1");
+		return "jquery/day1";
+	}
+	
 	//test 예제1 호출하기
 		@RequestMapping("/test")
 		public String test() {
