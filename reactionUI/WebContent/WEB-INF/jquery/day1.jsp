@@ -113,6 +113,8 @@ body {
 		
 		// 사용자 정의 함수 4
 		$("#tutorial li").click(function(){
+			
+			// 이전꺼는 들어간다.
 			$("#tutorial li").css({
 				"margin-left" : "0px"
 			});
