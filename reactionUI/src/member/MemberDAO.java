@@ -16,7 +16,7 @@ public class MemberDAO {
 		PreparedStatement pstmt=null;
 		ResultSet rs=null;
 		try {
-			logger.info("여기들어오니");
+			logger.info("MemberDAO.java DB접속준비");
 			conn=DB.getConn();
 			logger.info(conn);
 			String sql = "select * from member where userid=? and passwd=?";
@@ -29,7 +29,7 @@ public class MemberDAO {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			logger.info(e.toString()+", " +e.getMessage());
+			logger.info("MemberDAO.java DB접속오류"+toString()+", " +e.getMessage());
 		} finally {
 			try {
 				if(rs!=null) rs.close();

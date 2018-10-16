@@ -38,4 +38,17 @@
 		<servlet-name>dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+	<!-- ***************************************db연결을 위한 설정 -->
+	<!-- 	연동되는 파일및 위치설명
+			web.xml - resource-ref line(47~52)
+			server.xml - GlobalNamingResources line(36~43) 
+			server.xml - Context line(156~159)
+	 -->
+	<resource-ref>
+  	<description>Connection</description>
+  	<res-ref-name>jdbc/dbPool</res-ref-name>
+  	<res-type>javax.sql.DataSource</res-type>
+  	<res-auth>Container</res-auth>
+  </resource-ref>
+  <!-- ***************************************db연결을 위한 설정 -->
 </web-app>

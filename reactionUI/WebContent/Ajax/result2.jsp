@@ -13,8 +13,8 @@
 	//사용자의 입력값
 	String id=request.getParameter("id");
 	String pwd=request.getParameter("pwd");
-	out.println("아이디"+id);
-	out.println("비밀번호"+pwd);
+	//out.println("아이디"+id);
+	//out.println("비밀번호"+pwd);
 	MemberDAO dao = new MemberDAO();
 	MemberDTO dto = new MemberDTO();
 	dto.setUserid(id);
